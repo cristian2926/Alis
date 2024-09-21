@@ -114,3 +114,34 @@ body{
         font-size: 1rem;
     }
 }
+/* Estilo del contenedor */
+.greetings {
+    display: flex; /* Flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que las letras se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    width: 100vw; /* Ancho completo de la ventana */
+    background-color:  #000000; /* Color de fondo claro */
+}
+
+/* Estilo para cada letra */
+.greetings span {
+    font-size: 8vw; /* El tamaño del texto se ajusta al ancho de la ventana */
+    margin: 0.2vw; /* Espacio entre letras */
+    white-space: nowrap; /* Evita que las letras se dividan en varias líneas */
+}
+
+/* Asegura que el texto no sea demasiado pequeño en pantallas pequeñas */
+@media (max-width: 600px) {
+    .greetings span {
+        font-size: 12vw; /* Tamaño de fuente más grande en pantallas pequeñas */
+    }
+}
+
+/* Asegura que el texto no sea demasiado grande en pantallas grandes */
+@media (min-width: 1200px) {
+    .greetings span {
+        font-size: 5vw; /* Tamaño de fuente más pequeño en pantallas grandes */
+    }
+}
