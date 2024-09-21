@@ -121,7 +121,7 @@ body{
     align-items: center; /* Centra verticalmente */
     height: 100vh; /* Altura completa de la ventana */
     width: 100vw; /* Ancho completo de la ventana */
-    background-color: black; /* Color de fondo claro */
+    background-color: rgb(168, 32, 32); /* Color de fondo claro */
     padding: 1rem; /* Pequeño relleno para dar espacio en los bordes */
     box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
 }
